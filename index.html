@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIchat Services Co.</title>
+<style>
+body {
+background-color: #fff9c4; /* light yellow */
+margin: 0;
+font-family: Arial, sans-serif;
+color: #333;
+}
+
+
+header {
+background-color: #ffeb3b; /* brighter yellow */
+padding: 1rem;
+text-align: center;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+
+section {
+padding: 1.5rem;
+}
+
+
+.card {
+background: #fffde7;
+border: 1px solid #f0e68c;
+padding: 1rem;
+border-radius: 8px;
+max-width: 400px;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Career Center - Application Services</h1>
+    <nav>
+        <a href="application">Application Form</a>
+        <a href="quote">Quote</a>
+        <a href="media">Job Media</a>
+    </nav>
+</header>
+
+<main>
+    <section id="application" class="form-section">
+        <article>
+            <h2> Job Application Form</h2>
+            <!--FORM STARTING POINT-->
+            <form action="/submit" method="POST" autocomplete="on">
+                <!--TEXT INPUT-->
+                <label for="name & surname">Name & Surname:
+                    <input type="text" name="name & surname" placeholder="Full name" required minlength="5" maxlength="15">
+                </label><br><br>
+                
+                <label for="email account">Email Account:
+                    <input type="text" name="email account" placeholder="youremail@applications.com" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+                </label><br><br>
+                <!--PASSWORD-->
+                <label for="password">Password:
+                    <input type="password" name="password" required>
+                </label><br><br>
+
+                <!--NUMBER INPUT-->
+                <label for="yearsexperience">Years of Experience:
+                    <input type="number" name="experience" min="0" max="15">
+                </label><br><br>
+
+                <!--RANGE-->
+                <label for="salary">Expected Salary:
+                    <input type="range" name="salary" min="0" max="6000" step="50">
+                </label><br><br>
+
+                <label for="department">Department:
+                    <select name="department">
+                        <option value="sales">Sales</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="legal">Legal</option>
+                        <option value="service">Customer Service</option>
+                        <option value="finance">Finance</option>
+                        <option value="it">IT</option>
+                        <option value="maintenance">Maintenance</option>
+                    </select>
+                </label><br><br>
+
+                <!--CHECKBOX-->
+                <label for="job modality">Job Modality:</label><br>
+                    <input type="checkbox" name="job modality" value="online"> Online<br>
+                    <input type="checkbox" name="job modality" value="on-site"> On-site<br>
+                    <input type="checkbox" name="job modality" value="part-time"> Part-time<br><br>
+
+                <!--RADIO-->
+                <label for="job type">Job type:</label><br>
+                    <input type="radio" name="jobtype" value="freeinternship"> Internship<br>
+                    <input type="radio" name="jobtype" value="paidinternship"> Apprenticeship (paid)<br>
+                    <input type="radio" name="jobtype" value="fulltime"> Full time<br><br>
+
+                <!--DATALIST-->
+                <label for="location">Preferred Location:
+                    <input list="locations" name="location">
+                    <datalist id="locations">
+                        <option value="Barcelona">
+                        <option value="Vancouver">
+                        <option value="Taipei">
+                        <option value="Helsinki">
+                        <option value="Nairobi">
+                    </datalist>
+                </label><br><br>
+
+                <!--TEXTAREA-->
+                <label for="coverletter">Cover Letter:
+                    <textarea name="coverletter" rows="5" cols="40" placeholder="Why do you want to work for AIchat?">
+                    </textarea>
+                </label><br><br>
+
+                <!--DISABLED TEXT-->
+                <label>Application Code (disabled):
+                    <input type="text" value="A202511140001N" disabled>
+                </label><br><br>
+
+                <!--READONLY-->
+                <label>Application Tracker (readonly):
+                    <input type="text" value="APP20251133" readonly>
+                </label><br><br>
+
+                <!--SUBMIT BUTTON-->
+                <input type="submit" value="Submit Application" aria-label="Submit your Application">
+    
+            </form>
+            <!--FORM ENDING POINT-->
+        </article>
+    </section>
+
+    <!--MOTIVATIONAL QUOTE-->
+    <aside>
+            <p>"好好学习，天天向上"  <emr>Study hard and every day you will improve</emr> (idiom).</p>
+    </aside> 
+
+    <!--IMAGES + EMBED.VIDEO-->
+    <section id="media">
+       <article>
+        <h2>Media
+
+        </h2>
+        <figure>
+            <img src="c:\Users\Marc\Downloads\ChatGPT Image Nov 14, 2025, 09_51_01 PM.jpg" alt="Aichat logo" width="500">
+            <figcaption>Aichat logo version 1.0 (made with ChatGPT for this assignment)</figcaption>
+        </figure>
+
+       <video src="https://www.youtube.com/embed/cZHp-Oozg6I" type="video" width="560" height="315" controls>Video not supported in your country</video>
+       <p>Video tutorial on how to submit the application form.</p>
+
+       <embed src="c:\Users\Marc\Downloads\Software Development Partnership_Background_and_Briefing_AI_Chat_Solutions.pdf"/>
+       <p>Document with the guidelines</p>
+
+      </article>
+    </section>
+</main>
+  <!--FOOTER-->
+<footer>
+    <p>AIchat Services Co. 2025. All rights reserved. </p>
+</footer>
+
+</body>
+
+</html>
+  <!--TASK COMPLETED-->
